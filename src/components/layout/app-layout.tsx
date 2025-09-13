@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { AppSidebar } from "./app-sidebar";
 import { Header } from "./header";
 import { Chatbot } from "@/components/chatbot/chatbot";
+import MultilingualChatbot from "@/components/chatbot/MultilingualChatbot";
 
 export function AppLayout() {
   return (
@@ -13,7 +14,7 @@ export function AppLayout() {
           <Outlet />
         </main>
       </div>
-      <Chatbot />
+      <MultilingualChatbot />
     </>
   );
 }
